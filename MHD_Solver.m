@@ -18,17 +18,17 @@ CFL = 0.1; %CFL number
 
 %TIME
 t0 = 0; %start time
-tf = 1; %final time in simulation
+tf = 0.25; %final time in simulation
 dtout = 0.05; %intermediate outputs times (integer divisible of tf) (set to 0 to suppress intermediate outputs)
 
 %ADIABATIC INDEX
 gamma = 7/5;
 
 %DIMENSION
-dim = 1; %choose 0 for cartesian, 1 for cylindrical
+dim = 0; %choose 0 for cartesian, 1 for cylindrical
 
 %INITIAL CONDITIONS
-ICsel = 4; %select initial condition
+ICsel = 0; %select initial condition
 % 0: Sod shock tube from "Riemann Solvers ..." by Toro
 % 1: Shocktube from Hammett slides
 % 2: Acoustic wave from local pressure increase
@@ -39,7 +39,7 @@ ICsel = 4; %select initial condition
 
 %PLOT INPUTS
 plotIC = 1; %choose 1 to plot the initial condition, 0 to omit plot
-plotB = 1; %Choose 1 to plot the magnetic field instead of the internal energy
+plotB = 0; %Choose 1 to plot the magnetic field instead of the internal energy
 
 %RUNGE KUTTA SOLVER
 RKsel = 1; %select Runge Kutta solver
