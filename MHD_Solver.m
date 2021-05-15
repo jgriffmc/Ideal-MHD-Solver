@@ -18,8 +18,8 @@ CFL = 0.1; %CFL number
 
 %TIME
 t0 = 0; %start time
-tf = 0.25; %final time in simulation
-dtout = 0.05; %intermediate outputs times (integer divisible of tf) (set to 0 to suppress intermediate outputs)
+tf = 0.2; %final time in simulation
+dtout = 0; %intermediate outputs times (integer divisible of tf) (set to 0 to suppress intermediate outputs)
 
 %ADIABATIC INDEX
 gamma = 7/5;
